@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3 || HTML Essentials</title>
+  <style>
+    /* Media query for responsiveness */
+    @media (max-width: 800px) {
+      /* When width of device will be lesser then 800px it will make td as block level element */
+      td {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- All the empty tags are closed for good practices. -->
+  <!-- Here I am creating form with 11 inputs inside the table for desired output. -->
+  <table>
+    <form action="#" method="post">
+      <tr>
+        <!-- simple tex inputs for name. -->
+        <td>
+          <label for="fname">First Name:</label>
+          <br />
+          <input type="text" name="fname" />
+        </td>
+        <td>
+          <label for="lname">Last Name:</label>
+          <br />
+          <input type="text" name="lname" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <!-- input for email -->
+          <label for="email">Email</label>
+          <br />
+          <input type="email" name="email" id="email" />
+        </td>
+        <td>
+          <!-- input for contact number with tel type -->
+          <label for="call">Contact Number</label>
+          <br />
+          <input type="tel" name="call" id="call" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <!-- text input for username -->
+          <label for="uname">Username:</label>
+          <br />
+          <input type="text" name="uname" id="uname" />
+        </td>
+        <td>
+          <!-- input for password with password -->
+          <label for="pass">Password:</label>
+          <br />
+          <input type="password" name="pass" id="pass" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <!-- textarea input for Address -->
+          <label for="address">Address:</label>
+          <br />
+          <textarea name="address" id="address" cols="20" rows="2"></textarea>
+        </td>
+        <td>
+          <!-- Radio input for gender -->
+          <label for="gender">Gender:</label>
+          <br />
+          <!-- Here I am taking all the radio buttons to table for responsiveness. -->
+          <table>
+            <tr>
+              <td>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label>
+              </td>
+              <td>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!-- Dropdown menu input with select-option -->
+          <label for="qualification">Qualification:</label>
+          <br />
+          <select name="qualification" id="qualification">
+            <option value="">--Select--</option>
+            <option value="grad">B.tech</option>
+            <option value="hsc">HSC - 12th</option>
+            <option value="ssc">SSC - 10th</option>
+          </select>
+        </td>
+        <td>
+          <!-- Dropdown menu input with select-option -->
+          <label for="experience">Experience:</label>
+          <br />
+          <select name="exp" id="exp">
+            <option value="">--Select--</option>
+            <option value="one">1 Year</option>
+            <option value="two">2 Years</option>
+            <option value="three">3 Years</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!-- Again taking checkboxes to table for responsiveness. -->
+          <table>
+            <tr>
+              <td>
+                <!-- checkbox input for coding languages -->
+                <label for="codingLanguages">Coding Languages: &nbsp;</label>
+              </td>
+              <td>
+                <input type="checkbox" id="c/cpp" name="c/cpp" value="c/cpp" />
+                <label for="C">C/C++</label>
+              </td>
+              <td>
+                <input type="checkbox" id="java" name="java" value="Java" />
+                <label for="java">Java</label>
+              </td>
+              <td>
+                <input type="checkbox" id="c#" name="c#" value="C#" />
+                <label for="c#">C#</label>
+              </td>
+              <td>
+                <input type="checkbox" id="php" name="php" value="php" />
+                <label for="php">PHP</label>
+              </td>
+              <td>
+                <input type="checkbox" id="python" name="python" value="Python" />
+                <label for="python">Python</label>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <!-- Submit button -->
+        <td><input type="submit" value="Submit" /></td>
+      </tr>
+    </form>
+  </table>
+</body>
+</html>
